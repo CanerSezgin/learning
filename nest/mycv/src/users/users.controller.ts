@@ -9,7 +9,7 @@ import { UsersService } from './users.service';
 import { AuthService } from './auth.service';
 import { UserDto } from './dtos/user.dto';
 import { CurrentUser } from './decorators/current-user.decorator';
-import { AuthGuard } from '../guards/auth.guards';
+import { AuthGuard } from '../guards/auth.guard';
 import { Serialize } from '../interceptors/serialize.interceptor';
 
 @Controller('auth')
