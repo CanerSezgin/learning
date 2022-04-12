@@ -17,7 +17,7 @@ export class ReportsController {
 
     @Get()
     getEstimate(@Query() query: GetEstimateDto) { 
-        console.log(query)
+        return this.reportsService.createEstimate(query)
     }
 
     @Post()
@@ -32,7 +32,5 @@ export class ReportsController {
     approveReport(@Param('id') id: string, @Body() body: ApproveReportDto) {
         return this.reportsService.changeApproval(id, body.approved)
     }
-
-
 
 }
