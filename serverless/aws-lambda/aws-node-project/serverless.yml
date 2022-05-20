@@ -1,0 +1,12 @@
+service: aws-node-project
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  profile: serverless-aws-course
+
+functions:
+  hello:
+    handler: handler.hello
