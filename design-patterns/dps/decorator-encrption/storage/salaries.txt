@@ -1,0 +1,1 @@
+.........COMPRESSED........[{"name":"John Doe","salary":10000},{"name":"Cork Smith","salary":25000}]
